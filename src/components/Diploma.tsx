@@ -50,7 +50,7 @@ const Diploma: React.FC<DiplomaProps> = ({ name, level, qualification, date = "D
               {/* Crest/Logo */}
               <div className="diploma-header">
                 <div className="diploma-crest">
-                  <img src="/logo.png" alt="Belfast Institute" />
+                  <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Belfast Institute" />
                 </div>
                 <h1 className="institute-name">BELFAST INSTITUTE</h1>
                 <p className="founded-text">FUNDADO EN 1995</p>
@@ -68,7 +68,7 @@ const Diploma: React.FC<DiplomaProps> = ({ name, level, qualification, date = "D
 
               <div className="diploma-footer">
                 <div className="signature-area">
-                  <img className="signature-img" src="/signature.png" alt="Firma" onError={(e) => (e.currentTarget.style.display = 'none')} />
+                  <img className="signature-img" src={`${import.meta.env.BASE_URL}signature.png`} alt="Firma" onError={(e) => (e.currentTarget.style.display = 'none')} />
                   <div className="signature-line"></div>
                   <p className="signer-name">SILVIA BENITEZ</p>
                   <p className="signer-title">Directora</p>
